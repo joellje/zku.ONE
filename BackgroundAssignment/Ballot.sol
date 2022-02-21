@@ -62,12 +62,12 @@ contract Ballot {
             // executes rest of function (unchanged)
             address voter = votersarray[i];
 
-            require(
+            require( // requires that voter has not voted
                 !voters[voter].voted,
                 "The voter already voted."
             );
-            require(voters[voter].weight == 0);
-            voters[voter].weight = 1;
+            require(voters[voter].weight == 0); // requires that voter weight equals 0
+            voters[voter].weight = 1; // set voter weight to 1
         }
     }
 

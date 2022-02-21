@@ -13,7 +13,7 @@ contract HelloWorld {
         value = _value;
     }
 
-    function set (uint x) public { // setter function that sets value to x
+    function set(uint x) public { // setter function that sets value to x
         value = x;
     }
 
